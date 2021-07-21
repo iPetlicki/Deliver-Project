@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #9b9999;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*-----Header-----*/
+
+.header {
+    height: 600px;
+    background: #453415 url('../img/deliver_head.jpg')  no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header_logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #ffffff;
+    padding: 20px 0;
+}
+
+/*-----Social-----*/
+
+.header_social {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twitter,
+.facebook,
+.rss {
+    border:  solid transparent;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.6;
+    width: 30px;
+    height: 30px;
+}
+
+svg {
+    margin: 5px 4px;
+}
+
+.twitter:hover,
+.facebook:hover,
+.rss:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+/*-----Nav-----*/
+
+.nav {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.nav_link:hover {
+    color: #87b672;
+    transition: 0.3s;
+}
+
+/*-----Search-----*/
+
+form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    height: 42px;
+}
+input {
+    height: 30px;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+input:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid #ffffff;
+}
+button {
+    background: url('../img/magnify glass.svg') no-repeat;
+    border: none;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}

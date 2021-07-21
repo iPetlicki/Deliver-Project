@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.75;
+      }
+    </style>
+  </defs>
+  <path id="magnify_glass" data-name="magnify glass" class="cls-1" d="M1382.44,150.616l-2.31,2.452,6.55,6.932,2.31-2.452Zm-5.39-7.15a5.063,5.063,0,1,1-4.77,5.055,4.926,4.926,0,0,1,4.77-5.055m0-3.466a8.534,8.534,0,1,0,8.06,8.521,8.3,8.3,0,0,0-8.06-8.521h0Z" transform="translate(-1369 -140)"/>
+</svg>
