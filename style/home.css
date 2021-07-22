@@ -117,6 +117,9 @@ input:focus {
     width: 300px;
     z-index: 1;
     border-bottom: 2px solid #ffffff;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    font-size: 18px
 }
 button {
     background: url('../img/magnify glass.svg') no-repeat;
