@@ -45,27 +45,20 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
-.twitter,
-.facebook,
-.rss {
-    border:  solid transparent;
-    border-radius: 50%;
-    background-color: #ffffff;
-    opacity: 0.6;
-    width: 30px;
-    height: 30px;
+.social_item {
+    width: 35px;
+    height: 35px;
+    background-color: #fefefe;
+    opacity: 0.7;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 }
 
-svg {
-    margin: 5px 4px;
-}
-
-.twitter:hover,
-.facebook:hover,
-.rss:hover {
-    opacity: 0.9;
-    transition: 0.3s;
+.social_item:hover {
+    opacity: 1;
+    transition: 0.5s;
 }
 
 /*-----Nav-----*/
@@ -132,4 +125,41 @@ button {
     top: 0;
     right: 0;
     cursor: pointer;
+}
+
+/*-----services-----*/
+
+.services_tittle {
+    max-width: 840px;
+    margin: 60px auto 65px auto;
+}
+
+.tittle {
+    text-align: center;
+    color: #666262;
+}
+
+.text {
+    text-align: center;
+}
+
+.service_block {
+    margin-top: 65px;
+    border-top: solid 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_item {
+    margin-top: 60px;
+}
+
+.service_item img {
+    display: block;
+    align-content: center;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
 }
