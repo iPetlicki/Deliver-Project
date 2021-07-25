@@ -120,7 +120,7 @@ input {
 }
 
 input:focus {
-    width: 300px;
+    width: 280px;
     z-index: 1;
     border-bottom: 2px solid #ffffff;
     font-family: 'Lato', sans-serif;
@@ -236,7 +236,7 @@ h3 {
 /*-----Purchase-----*/
 
 .purchase {
-    padding-top: 60px;
+    padding: 60px 0 60px 0;
     
 }
 
@@ -263,4 +263,47 @@ h3 {
 
 footer {
     background: #333333;
+}
+
+.footer {
+    padding: 60px 0 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact,
+.quick_links,
+.newsletter {
+    width: 220px;
+}
+
+.deliver_footer {
+    width: 460px;
+}
+
+.social_logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deliver_footer .text {
+    text-align: left;
+}
+
+.footer h3 {
+    color: #ffffff;
+}
+.address {
+    font-style: normal;
+}
+
+.contact a {
+    display:block;
+    font-family: 'Lato', sans-serif;
+    color: #9b9999;
+    text-decoration: none;
+}
+
+ul {
+    list-style-image: url('../img/list_marker.gif');
 }
