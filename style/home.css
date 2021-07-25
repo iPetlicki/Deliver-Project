@@ -3,6 +3,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #9b9999;
+
 }
 
 * {
@@ -141,6 +142,7 @@ button {
 
 .text {
     text-align: center;
+    line-height: 1.5;
 }
 
 .service_block {
@@ -152,6 +154,8 @@ button {
 
 .service_item {
     margin-top: 60px;
+    text-align: center;
+    padding-bottom: 60px;
 }
 
 .service_item img {
@@ -162,4 +166,69 @@ button {
 
 h3 {
     text-align: center;
+    text-transform: uppercase;
+    color: #666262;
+}
+
+.FOM {
+    color: #87b672;
+    text-decoration: none;
+}
+
+/*-----latest work-----*/
+
+.work_background {
+    height: 360px;
+    background: #efefef;
+    margin-bottom: 157px;
+}
+
+.work_background .container {
+    padding: 60px 0;
+    border-bottom: 1px solid
+}
+
+.work {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work_items {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    left: 47px;
+    top: 16px;
+    opacity: 0;
+
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/*-----Purchase-----*/
+
+.purchase {
+    padding-top: 60px;
+    
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 22px;
+
+}
+
+.btn--red {
+    background-color: #87b672;
 }
