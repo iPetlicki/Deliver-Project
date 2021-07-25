@@ -34,8 +34,8 @@
                 <a class="nav_link" href="#">Other pages</a>
                 <a class="nav_link" href="#">Contact us</a>
                 <form method="get" action="search.php">
-                    <input type="text" placeholder="Search here...">
-                    <button type="submit"></button>
+                    <input class="search" type="text" placeholder="Search here...">
+                    <button class="submit_head" type="submit"></button>
                 </form>
             </nav>
         </div>
@@ -149,8 +149,9 @@
             </div>
             <div class="newsletter"><h3>newsletter</h3>
                 <p>Lorem ipsum dolor sit amet dolor consectetur adipiscing elit.</p>
-                <form>
-
+                <form method="post" action="mail.php">
+                    <input type="text" name="email" value="Email">
+                    <input type="submit" value="ok">
                 </form>
             </div>
 
