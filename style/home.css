@@ -97,7 +97,7 @@ p {
 
 /*-----Search-----*/
 
-form {
+.form_search {
     position: relative;
     width: 300px;
     margin: 0 auto;
