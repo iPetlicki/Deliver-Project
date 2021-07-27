@@ -259,6 +259,11 @@ h3 {
     background-color: #87b672;
 }
 
+.btn--green:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
 /*-----footer-----*/
 
 footer {
