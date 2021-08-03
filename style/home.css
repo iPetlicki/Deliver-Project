@@ -277,13 +277,13 @@ footer {
 }
 
 .contact,
-.quick_links,
-.newsletter {
-    width: 220px;
+.quick_links {
+    margin-right: 80px;
 }
 
 .deliver_footer {
     width: 460px;
+    margin-right: 80px;
 }
 
 .social_logo {
@@ -293,6 +293,7 @@ footer {
 
 .deliver_footer .text {
     text-align: left;
+    line-height: 1.8;
 }
 
 .footer h3 {
@@ -300,6 +301,8 @@ footer {
 }
 .address {
     font-style: normal;
+    line-height: 1.8;
+
 }
 
 .contact a {
@@ -307,8 +310,20 @@ footer {
     font-family: 'Lato', sans-serif;
     color: #9b9999;
     text-decoration: none;
+    line-height: 1.8;
+
 }
 
 ul {
     list-style-image: url('../img/list_marker.gif');
+    padding-left: 15px;
+    line-height: 1.5;
+}
+
+.footer h3 {
+    text-align: left;
+}
+
+.newsletter p {
+    line-height: 2;
 }
