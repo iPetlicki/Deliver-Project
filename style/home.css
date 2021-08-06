@@ -203,6 +203,7 @@ h3 {
     height: 360px;
     background: #efefef;
     margin-bottom: 153px;
+    width: 100%
 }
 
 .work_background .container {
@@ -274,11 +275,13 @@ footer {
     padding: 60px 0 60px 0;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #808080;
 }
 
 .contact,
 .quick_links {
-    margin-right: 80px;
+    
+    width: 240px;
 }
 
 .deliver_footer {
@@ -293,7 +296,7 @@ footer {
 
 .deliver_footer .text {
     text-align: left;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 .footer h3 {
@@ -301,7 +304,7 @@ footer {
 }
 .address {
     font-style: normal;
-    line-height: 1.8;
+    line-height: 1.5;
 
 }
 
@@ -310,7 +313,7 @@ footer {
     font-family: 'Lato', sans-serif;
     color: #9b9999;
     text-decoration: none;
-    line-height: 1.8;
+    line-height: 1.5;
 
 }
 
@@ -325,5 +328,52 @@ ul {
 }
 
 .newsletter p {
-    line-height: 2;
+    line-height: 1.5;
 }
+
+.contact_mail {
+    margin-top: 10px;
+}
+
+.phone.phone {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.email {
+    width: 160px;
+    height: 40px;
+    background-color: #4e4c4c;
+    color: #ffffff;
+    border: none;
+
+}
+
+.mail_submit {
+    width: 50px;
+    height: 40px;
+    background-color: #828282;
+    color: #ffffff;
+    border: none;
+}
+
+.mail_submit:active {
+    border: solid 2px #333333;
+}
+
+.bottom {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    text-transform: uppercase;
+}
+
+.copyright span {
+    color: #cbcbcb;
+}
+
