@@ -22,7 +22,7 @@ p {
 
 .header {
     height: 600px;
-    background: #453415 url('../img/deliver_head_22.jpg')  no-repeat;
+    background: #453415 url('../img/deliver_head_33.jpg')  no-repeat;
     background-size: cover;
 
 }
@@ -211,15 +211,13 @@ h3 {
 /*-----latest work-----*/
 
 .work_background {
-    height: 360px;
+    min-height: 360px;
     background: #efefef;
-    margin-bottom: 153px;
     width: 100%
 }
 
 .work_background .container {
     padding: 60px 0;
-    border-bottom: 1px solid
 }
 
 .work {
@@ -232,18 +230,90 @@ h3 {
     position: relative;
 }
 
-.overlay {
-    position: absolute;
-    left: 47px;
-    top: 16px;
-    opacity: 0;
-
+.work_items:not(:last-child) {
+    margin-right: 10px;
 }
 
-.overlay:hover {
-    opacity: 1;
+/* Style the Image Used to Trigger the Modal */
+#circle_icons,
+#arrows,
+#portfolio_theme {
+    border-radius: 5px;
+    cursor: pointer;
     transition: 0.3s;
 }
+
+#circle_icons:hover,
+#arrows:hover,
+#portfolio_theme:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1500px;
+}
+
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close,
+.close2,
+.close3 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus,
+.close3:hover,
+.close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
 
 /*-----Purchase-----*/
 
@@ -331,9 +401,7 @@ ul {
     line-height: 1.5;
 }
 
-li a,
-li a:active,
-li a:visited {
+li a {
     text-decoration: none;
     color: inherit;
 }
@@ -389,7 +457,23 @@ li a:visited {
     text-transform: uppercase;
 }
 
+.about a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
 .copyright span {
     color: #cbcbcb;
 }
 
+@media only screen and (max-width: 1100px){
+.work {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+}

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <title>Home</title>
-
         <link rel="stylesheet" href="style/home.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
     </head>
@@ -75,25 +75,37 @@
             <h2 class="tittle">Some of Our Latest Work</h2>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.</p>
             <div class="work">
+
+
                 <div class="work_items">
-                    <img src="img/works/circle_icons.gif" alt="circle icons">
-                    <a href="#">
-                        <img class="overlay" src="img/works/overlay.png">
-                    </a>
+                    <img id="circle_icons" src="img/works/circle_icons.gif" alt="circle icons" >
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01" src="img/deliver_head_33.jpg">
+                    </div>
                     <h3>Circle Icons</h3>
+
+
                 </div>
                 <div class="work_items">
-                    <img src="img/works/arrows.gif" alt="circle icons">
-                    <a href="#">
-                        <img class="overlay" src="img/works/overlay.png">
-                    </a>
+                    <img id="arrows" src="img/works/arrows.gif" alt="arrows">
+                    <div id="myModal2" class="modal">
+                        <span class="close2">&times;</span>
+                        <img class="modal-content" id="img02" src="img/deliver_head_22.jpg">
+                    </div>
                     <h3>Arrows</h3>
                 </div>
+
+
+
+
+
                 <div class="work_items">
-                    <img src="img/works/portfolio_theme.gif" alt="circle icons">
-                    <a href="#">
-                        <img class="overlay" src="img/works/overlay.png">
-                    </a>
+                    <img id="portfolio_theme" src="img/works/portfolio_theme.gif" alt="portfolio theme">
+                    <div id="myModal3" class="modal">
+                        <span class="close3">&times;</span>
+                        <img class="modal-content" id="img03" src="img/deliver_head_11.jpg">
+                    </div>
                     <h3>Portfolio Theme</h3>
                 </div>
 
@@ -159,10 +171,49 @@
         </div>
         <div class="container bottom">
             <div class="copyright">Copyright 2013 <span>Deliver</span>. All Rights Reserved.</div>
-            <div class="about">About  /  Privacy Policy  /  Contact</div>
+            <div class="about"><a href="#">About</a>  /  <a href="#">Privacy Policy</a>  /  <a href="#">Contact</a></div>
         </div>
-
     </footer>
+
+
+
+<script>
+    let modal = document.getElementById('myModal');
+    let img = document.getElementById('circle_icons');
+    img.onclick = function() {
+        modal.style.display = "block";
+    }
+    let span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    let modal2 = document.getElementById('myModal2');
+    let img2 = document.getElementById('arrows');
+    img2.onclick = function() {
+        modal2.style.display = "block";
+    }
+    let span2 = document.getElementsByClassName("close2")[0];
+    span2.onclick = function() {
+        modal2.style.display = "none";
+    }
+
+    let modal3 = document.getElementById('myModal3');
+    let img3 = document.getElementById('portfolio_theme');
+    img3.onclick = function() {
+        modal3.style.display = "block";
+    }
+    let span3 = document.getElementsByClassName("close3")[0];
+    span3.onclick = function() {
+        modal3.style.display = "none";
+    }
+</script>
+
+
+
+
+
+
 
     </body>
 </html>
