@@ -22,8 +22,9 @@ p {
 
 .header {
     height: 600px;
-    background: #453415 url('../img/deliver_head.jpg')  no-repeat;
+    background: #453415 url('../img/deliver_head_22.jpg')  no-repeat;
     background-size: cover;
+
 }
 
 .container {
@@ -37,6 +38,12 @@ p {
     font-size: 40px;
     color: #ffffff;
 }
+
+.logo {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 
 .header_inner {
     display: flex;
@@ -129,7 +136,7 @@ p {
 }
 
 .submit_head {
-    background: url('../img/magnify glass.svg') no-repeat;
+    background: url('../img/magnify_glass.svg') no-repeat;
     border: none;
     height: 42px;
     width: 42px;
@@ -197,6 +204,10 @@ h3 {
     text-decoration: none;
 }
 
+.FOM:hover {
+    text-decoration: underline;
+}
+
 /*-----latest work-----*/
 
 .work_background {
@@ -254,13 +265,11 @@ h3 {
     text-decoration: none;
     padding: 12px 22px;
     margin-top: 30px;
-}
-
-.btn--green {
     background-color: #87b672;
 }
 
-.btn--green:hover {
+
+.btn:hover {
     opacity: 0.7;
     transition: 0.3s;
 }
@@ -314,13 +323,19 @@ footer {
     color: #9b9999;
     text-decoration: none;
     line-height: 1.5;
-
 }
 
 ul {
     list-style-image: url('../img/list_marker.gif');
     padding-left: 15px;
     line-height: 1.5;
+}
+
+li a,
+li a:active,
+li a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 .footer h3 {
@@ -348,8 +363,9 @@ ul {
     background-color: #4e4c4c;
     color: #ffffff;
     border: none;
-
 }
+
+
 
 .mail_submit {
     width: 50px;
