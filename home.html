@@ -6,6 +6,7 @@
         <title>Home</title>
         <link rel="stylesheet" href="style/home.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
 <!--    header-->
@@ -25,20 +26,55 @@
                     </a>
                 </div>
             </div>
-            <nav class="nav">
-                <a class="nav_link" href="#">Home</a>
-                <a class="nav_link" href="#">Portfolio</a>
-                <a class="nav_link" href="#">About</a>
-                <a class="nav_link" href="#">Services</a>
-                <a class="nav_link" href="#">Archive</a>
-                <a class="nav_link" href="#">Blog</a>
-                <a class="nav_link" href="#">Other pages</a>
-                <a class="nav_link" href="#">Contact us</a>
-                <form class="form_search" method="get" action=" https://fe.it-academy.by/TestForm.php">
-                    <input class="search" type="text" placeholder="Search here...">
-                    <button class="submit_head" type="submit"></button>
-                </form>
-            </nav>
+
+            <div class="nav_form">
+                <nav class="nav" id="nav">
+                    <a class="nav_link" href="#">Home</a>
+                    <a class="nav_link" href="#">Portfolio</a>
+                    <a class="nav_link" href="#">About</a>
+                    <a class="nav_link" href="#">Services</a>
+                    <a class="nav_link" href="#">Archive</a>
+                    <a class="nav_link" href="#">Blog</a>
+                    <a class="nav_link" href="#">Other pages</a>
+                    <a class="nav_link" href="#">Contact us</a>
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger_item">M</span>
+                </button>
+                    <form class="form_search" method="get" action=" https://fe.it-academy.by/TestForm.php">
+                        <input class="search" type="text" placeholder="Search here...">
+                        <button class="submit_head" type="submit"></button>
+                    </form>
+            </div>
+            <div id="slide" class="slide_hid">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="text_slider"><h1>We <span class="green_h1">Deliver</span> nothing Short of Awesome!</h1>
+                        <div class="slide">Check out our portfolio to see our great work.</div>
+                        <button onclick="window.location.href = 'https://google.com';" class="portfolio">portfolio</button>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="text_slider"><h1>Caption Two</h1></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="text_slider"><h1>Caption 3</h1></div>
+
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            </div>
         </div>
 
     </header>
@@ -75,36 +111,30 @@
             <h2 class="tittle">Some of Our Latest Work</h2>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.</p>
             <div class="work">
-
-
                 <div class="work_items">
-                    <img id="circle_icons" src="img/works/circle_icons.gif" alt="circle icons" >
+                    <img  src="img/works/case.gif" alt="" >
+                    <img id="circle_icons" src="img/works/screen_icons.jpg" alt="">
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
-                        <img class="modal-content" id="img01" src="img/deliver_head_33.jpg">
+                        <img class="modal-content" id="img01" src="img/works/screen_icons_big.jpg">
                     </div>
                     <h3>Circle Icons</h3>
-
-
                 </div>
                 <div class="work_items">
-                    <img id="arrows" src="img/works/arrows.gif" alt="arrows">
+                    <img  src="img/works/case.gif" alt="" >
+                    <img id="arrows" src="img/works/arrows.jpg" alt="">
                     <div id="myModal2" class="modal">
                         <span class="close2">&times;</span>
-                        <img class="modal-content" id="img02" src="img/deliver_head_22.jpg">
+                        <img class="modal-content" id="img02" src="img/works/arrows_big.jpg">
                     </div>
                     <h3>Arrows</h3>
                 </div>
-
-
-
-
-
                 <div class="work_items">
-                    <img id="portfolio_theme" src="img/works/portfolio_theme.gif" alt="portfolio theme">
+                    <img  src="img/works/case.gif" alt="" >
+                    <img id="portfolio_theme" src="img/works/portfolio_small.jpg" alt="">
                     <div id="myModal3" class="modal">
                         <span class="close3">&times;</span>
-                        <img class="modal-content" id="img03" src="img/deliver_head_11.jpg">
+                        <img class="modal-content" id="img03" src="img/works/portfolio_big.jpg">
                     </div>
                     <h3>Portfolio Theme</h3>
                 </div>
@@ -118,7 +148,7 @@
         <p class="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.
         </p>
-        <a class="btn btn--green" href="#">Purchase</a>
+        <button class="btn" onclick="window.location.href = 'https://google.com';">Purchase</button>
     </div>
     <footer>
         <div class="container footer">
@@ -157,7 +187,7 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Archive</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Dropdown</a></li>
+                    <li><a href="#">Services</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
@@ -177,43 +207,6 @@
 
 
 
-<script>
-    let modal = document.getElementById('myModal');
-    let img = document.getElementById('circle_icons');
-    img.onclick = function() {
-        modal.style.display = "block";
-    }
-    let span = document.getElementsByClassName("close")[0];
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    let modal2 = document.getElementById('myModal2');
-    let img2 = document.getElementById('arrows');
-    img2.onclick = function() {
-        modal2.style.display = "block";
-    }
-    let span2 = document.getElementsByClassName("close2")[0];
-    span2.onclick = function() {
-        modal2.style.display = "none";
-    }
-
-    let modal3 = document.getElementById('myModal3');
-    let img3 = document.getElementById('portfolio_theme');
-    img3.onclick = function() {
-        modal3.style.display = "block";
-    }
-    let span3 = document.getElementsByClassName("close3")[0];
-    span3.onclick = function() {
-        modal3.style.display = "none";
-    }
-</script>
-
-
-
-
-
-
-
+    <script src="JS/app.js"></script>
     </body>
 </html>

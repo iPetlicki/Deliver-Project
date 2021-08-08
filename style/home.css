@@ -3,6 +3,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #9b9999;
+    min-width: 320px;
 
 }
 
@@ -87,6 +88,13 @@ p {
     text-transform: uppercase;
 }
 
+.nav_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
 .nav_link {
     color: #ffffff;
     text-decoration: none;
@@ -107,7 +115,7 @@ p {
 .form_search {
     position: relative;
     width: 300px;
-    margin: 0 auto;
+    margin: 30px auto;
     height: 42px;
 }
 
@@ -127,7 +135,7 @@ p {
 }
 
 .search:focus {
-    width: 280px;
+    width: 300px;
     z-index: 1;
     border-bottom: 2px solid #ffffff;
     font-family: 'Lato', sans-serif;
@@ -145,6 +153,132 @@ p {
     right: 0;
     cursor: pointer;
 }
+
+/* Slideshow container---------------------------- */
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin-top: 250px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: #9b9999;
+    opacity: 0.5;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0.9;
+}
+
+/* Caption text */
+.text_slider {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.text_slider h1 {
+    text-transform: uppercase;
+    word-spacing: 7px;
+}
+
+.green_h1 {
+    color:#87b672 ;
+}
+
+.slide {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.portfolio {
+    box-sizing: border-box;
+    background: transparent;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.portfolio:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+
 
 /*-----services-----*/
 
@@ -211,7 +345,6 @@ h3 {
 /*-----latest work-----*/
 
 .work_background {
-    min-height: 360px;
     background: #efefef;
     width: 100%
 }
@@ -234,48 +367,52 @@ h3 {
     margin-right: 10px;
 }
 
-/* Style the Image Used to Trigger the Modal */
+#circle_icons,
+#arrows,
+#portfolio_theme{
+    position: absolute;
+    left: 47px;
+    top:16px;
+}
+
 #circle_icons,
 #arrows,
 #portfolio_theme {
-    border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 #circle_icons:hover,
 #arrows:hover,
-#portfolio_theme:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+#portfolio_theme:hover {
+    transform: scale(1.05);
 }
 
-/* Modal Content (Image) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
 .modal-content {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 1500px;
+    max-width: 1000px;
+    border-radius: 10px;
 }
 
-
-
-/* Add Animation - Zoom in the Modal */
 .modal-content {
     animation-name: zoom;
-    animation-duration: 0.6s;
+    animation-duration: 0.9s;
 }
 
 @keyframes zoom {
@@ -283,7 +420,6 @@ h3 {
     to {transform:scale(1)}
 }
 
-/* The Close Button */
 .close,
 .close2,
 .close3 {
@@ -307,14 +443,6 @@ h3 {
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
-
 /*-----Purchase-----*/
 
 .purchase {
@@ -336,12 +464,15 @@ h3 {
     padding: 12px 22px;
     margin-top: 30px;
     background-color: #87b672;
+    border-radius: 1px;
+    border: none;
 }
 
 
 .btn:hover {
-    opacity: 0.7;
+
     transition: 0.3s;
+    background-color: #558042;
 }
 
 /*-----footer-----*/
@@ -470,10 +601,146 @@ li a {
     color: #cbcbcb;
 }
 
-@media only screen and (max-width: 1100px){
-.work {
-    justify-content: center;
-    flex-wrap: wrap;
+.burger {
+    padding: 9px 2px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: none;
+    position: absolute;
+    left: 0;
+    top:20px;
 }
 
+.burger_item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+
+    font-size: 0;
+    color: transparent;
+    position: relative;
 }
+
+.burger_item:before,
+.burger_item:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.burger_item:before {
+    top:-8px;
+}
+.burger_item:after {
+    bottom: -8px;
+}
+
+
+
+
+
+/*=============================media=======================*/
+@media only screen and (max-width: 1270px){
+
+    .header_inner {
+        margin: 0 20px;
+    }
+
+    .nav {
+        margin: 30px 20px 0 20px;
+    }
+
+    .work {
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 920px){
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .slide_hid.hid {
+        display: none;
+    }
+
+    .nav_link {
+        padding: 10px 0;
+    }
+
+    .nav_form {
+        justify-content: flex-end;
+        margin: 0 20px;
+
+    }
+
+    .form_search {
+        margin: 15px 0;
+        width: 200px;
+    }
+
+    .search:focus {
+        width: 200px;
+    }
+
+
+
+
+    .burger {
+        display: block;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 380px) {
+    .header {
+        max-height: 400px;
+    }
+
+    .header_inner {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
