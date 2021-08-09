@@ -9,18 +9,7 @@ navToggle.on("click", function (event) {
 navToggle.on("click", function (event) {
     event.preventDefault();
     slide.toggleClass("hid");
-})
-
-;
-// =============================slide_hidden
-
-
-
-
-
-
-
-
+});
 // ================================slide
 let slideIndex = 1;
 showSlides(slideIndex);

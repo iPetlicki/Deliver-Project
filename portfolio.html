@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/portfolio.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+<body>
+<!--    header-->
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="header_logo"><a class="logo" href="home.html">Deliver</a></div>
+            <div class="header_social">
+                <a class="social_item" href="https://www.twitter.com" target="_blank" title="We are on twitter!">
+                    <img src="img/social/twitter-white.gif"  alt="tw">
+                </a>
+                <a class="social_item" href="https://www.facebook.com/" target="_blank" title="We are on facebook!">
+                    <img src="img/social/facebook-white.gif"  alt="fb">
+                </a>
+                <a class="social_item" href="https://rss.com/" target="_blank" title="We are on RRS!">
+                    <img src="img/social/rrs-white.gif"  alt="rrs">
+                </a>
+            </div>
+        </div>
+
+        <div class="nav_form">
+            <nav class="nav" id="nav">
+                <a class="nav_link" href="home.html">Home</a>
+                <a class="nav_link" href="portfolio.html">Portfolio</a>
+                <a class="nav_link" href="#">About</a>
+                <a class="nav_link" href="#">Services</a>
+                <a class="nav_link" href="#">Archive</a>
+                <a class="nav_link" href="#">Blog</a>
+                <a class="nav_link" href="#">Other pages</a>
+                <a class="nav_link" href="#">Contact us</a>
+            </nav>
+            <button class="burger" type="button" id="navToggle">
+                <span class="burger_item">M</span>
+            </button>
+            <form class="form_search" method="get" action=" https://fe.it-academy.by/TestForm.php">
+                <input class="search" type="text" placeholder="Search here...">
+                <button class="submit_head" type="submit"></button>
+            </form>
+        </div>
+    </div>
+    <h1  id="slide" class="slide_hid">our portfolio</h1>
+</header>
+<!--    text portfolio-->
+<div class="container services">
+    <div id="side2" class="services_tittle slide_hid">
+        <h2 class="tittle">Nothing but the best for our Portfolio!</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.</p>
+    </div>
+</div>
+<!--    works portfolio-->
+<div class="work_background">
+    <div class="container ">
+        <div class="work">
+            <div class="work_items">
+                <img  src="img/works/cases.gif" alt="" >
+                <img class="portfolio_works" id="1" src="img/portfolio/10web-s.jpg" alt="">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="11" src="img/portfolio/10web-b.jpg" alt="">
+                </div>
+                <h3>10 web</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit praesent justo ligula.</p>
+            </div>
+            <div class="work_items">
+                <img  src="img/works/cases.gif" alt="" >
+                <img class="portfolio_works" id="2" src="img/portfolio/apple-s.jpg" alt="">
+                <div id="myModal2" class="modal">
+                    <span class="close2">&times;</span>
+                    <img class="modal-content" id="22" src="img/portfolio/apple-b.jpg" alt="">
+                </div>
+                <h3>apple</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit praesent justo ligula.</p>
+            </div>
+            <div class="work_items">
+                <img  src="img/works/cases.gif" alt="" >
+                <img class="portfolio_works" id="3" src="img/portfolio/cherry-s.jpg" alt="">
+                <div id="myModal3" class="modal">
+                    <span class="close3">&times;</span>
+                    <img class="modal-content" id="33" src="img/portfolio/cherry-b.jpg" alt="">
+                </div>
+                <h3>cherry</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit praesent justo ligula.</p>
+            </div>
+            <div class="work_items">
+                <img  src="img/works/cases.gif" alt="" >
+                <img class="portfolio_works" id="4" src="img/portfolio/dalton-s.jpg" alt="">
+                <div id="myModal4" class="modal">
+                    <span class="close4">&times;</span>
+                    <img class="modal-content" id="44" src="img/portfolio/dalton-b.jpg" alt="">
+                </div>
+                <h3>dalton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit praesent justo ligula.</p>
+            </div>
+            <div class="work_items">
+                <img  src="img/works/cases.gif" alt="" >
+                <img class="portfolio_works" id="5" src="img/portfolio/grokker-s.jpg" alt="">
+                <div id="myModal5" class="modal">
+                    <span class="close5">&times;</span>
+                    <img class="modal-content" id="55" src="img/portfolio/grokker-b.jpg" alt="">
+                </div>
+                <h3>grokker</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit praesent justo ligula.</p>
+            </div>
+            <div class="work_items">
+                <img  src="img/works/cases.gif" alt="" >
+                <img class="portfolio_works" id="6" src="img/portfolio/marine-s.jpg" alt="">
+                <div id="myModal6" class="modal">
+                    <span class="close6">&times;</span>
+                    <img class="modal-content" id="66" src="img/portfolio/marine-b.jpg" alt="">
+                </div>
+                <h3>marine</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit praesent justo ligula.</p>
+            </div>
+            <div class="work_items">
+                <img  src="img/works/cases.gif" alt="" >
+                <img class="portfolio_works" id="7" src="img/portfolio/tails-s.jpg" alt="">
+                <div id="myModal7" class="modal">
+                    <span class="close7">&times;</span>
+                    <img class="modal-content" id="77" src="img/portfolio/tails-b.jpg" alt="">
+                </div>
+                <h3>tails</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit praesent justo ligula.</p>
+            </div>
+            <div class="work_items">
+                <img  src="img/works/cases.gif" alt="" >
+                <img class="portfolio_works" id="8" src="img/portfolio/tripdeal-s.jpg" alt="">
+                <div id="myModal8" class="modal">
+                    <span class="close8">&times;</span>
+                    <img class="modal-content" id="88" src="img/portfolio/tripdeal-b.jpg" alt="">
+                </div>
+                <h3>trip deal</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit praesent justo ligula.</p>
+            </div>
+            <div class="work_items">
+                <img  src="img/works/cases.gif" alt="" >
+                <img class="portfolio_works" id="9" src="img/portfolio/udemy-s.jpg" alt="">
+                <div id="myModal9" class="modal">
+                    <span class="close9">&times;</span>
+                    <img class="modal-content" id="99" src="img/portfolio/udemy-b.jpg" alt="">
+                </div>
+                <h3>udemy</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit praesent justo ligula.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    get site-->
+<div class="container purchase">
+    <h2 class="tittle">Do you need a Website?</h2>
+    <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.
+    </p>
+    <button class="btn" onclick="window.location.href = 'https://google.com';">Get a Free Quote</button>
+</div>
+
+<footer>
+    <div class="container footer">
+        <div class="deliver_footer">
+            <div class="social_logo">
+                <div class="header_logo"><a class="logo_footer" href="home.html">Deliver</a></div>
+                <div class="header_social">
+                    <a class="social_item_footer" href="https://www.twitter.com" target="_blank" title="We are on twitter!">
+                        <img src="img/social/twitter.gif"  alt="tw">
+                    </a>
+                    <a class="social_item_footer" href="https://www.facebook.com/" target="_blank" title="We are on facebook!">
+                        <img src="img/social/facebook.gif"  alt="fb">
+                    </a>
+                    <a class="social_item_footer" href="https://rss.com/" target="_blank" title="We are on RRS!">
+                        <img src="img/social/rrs.gif"  alt="rrs">
+                    </a>
+                </div>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida quam quis nunc rutrum placerat. Proin eu mi vitae neque veh interdum id nec turpis nam auctor faucibus sollicitudin.</p>
+
+        </div>
+        <div class="contact">
+            <h3>contact info</h3>
+            <address class="address">
+                222 Ave C South<br>
+                Saskatoon, Saskatchewan<br>
+                Canada S7K 2N5
+            </address>
+            <a class="contact_mail" href="mailto:info@deliver.ca">info@deliver.ca</a>
+            <a class="phone" href="tel:1.306.222.3456">1.306.222.3456</a>
+        </div>
+        <div class="quick_links">
+            <h3>quick links</h3>
+            <ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="newsletter"><h3>newsletter</h3>
+            <p>Lorem ipsum dolor sit amet dolor consectetur adipiscing elit.</p>
+            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                <input class="email" type="email" name="email" value="   Email">
+                <input class="mail_submit" type="submit" value="OK">
+            </form>
+        </div>
+    </div>
+    <div class="container bottom">
+        <div class="copyright">Copyright 2013 <span>Deliver</span>. All Rights Reserved.</div>
+        <div class="about"><a href="#">About</a>  /  <a href="#">Privacy Policy</a>  /  <a href="#">Contact</a></div>
+    </div>
+</footer>
+<script src="JS/portfolio.js"></script>
+</body>
+</html>
