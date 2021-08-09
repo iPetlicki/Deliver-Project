@@ -796,10 +796,10 @@ li a {
 }
 @media only screen and (max-width: 380px) {
     .header {
-        max-height: 380px;
+        max-height: 540px;
     }
 
-    .header_inner {
+    .slideshow-container {
         display: none;
     }
 
