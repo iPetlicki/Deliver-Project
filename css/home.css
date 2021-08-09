@@ -288,7 +288,7 @@ p {
 .services_tittle {
     max-width: 840px;
     margin: 0 auto 60px auto;
-    padding: 0 20px;
+
 }
 
 h2.tittle {
@@ -313,7 +313,7 @@ p.text {
 .service {
     margin-top: 60px;
     text-align: center;
-    padding: 0 20px;
+
 }
 
 .service_item img {
@@ -350,7 +350,7 @@ h3 {
 }
 
 .work_background .container {
-    padding: 60px 20px;
+    padding: 60px 0;
 }
 
 .work {
@@ -446,7 +446,7 @@ h3 {
 /*-----Purchase-----*/
 
 .purchase {
-    padding: 60px 20px 60px 20px;
+    padding: 60px 0;
     text-align: center;
 }
 
