@@ -1,0 +1,15 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" width="24.42" height="25.01" viewBox="0 0 24.42 25.01">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <title>mg-home</title>
+  <circle class="cls-1" cx="9" cy="9" r="7.5"/>
+  <rect class="cls-1" x="1911.2" y="1113.31" width="1.18" height="10.32" rx="0.59" transform="translate(-2123.61 580.65) rotate(-45)"/>
+</svg>

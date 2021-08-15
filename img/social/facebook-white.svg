@@ -1,0 +1,11 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="10" height="20" viewBox="0 0 10 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>facebook-white</title>
+  <path id="f" class="cls-1" d="M79.06,87.57V78.45h3l.44-3.56H79.06V72.62c0-1,.27-1.73,1.7-1.73h1.81V67.71a24.15,24.15,0,0,0-2.64-.14c-2.61,0-4.4,1.66-4.4,4.7v2.62h-3v3.56h3v9.12Z" transform="translate(-72.57 -67.57)"/>
+</svg>

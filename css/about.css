@@ -83,7 +83,7 @@ p {
     font-weight: 600;
     display: flex;
     justify-content: flex-start;
-    margin-top: 30px;
+    margin-top: 20px;
     text-transform: uppercase;
 }
 
@@ -100,8 +100,12 @@ p {
     margin-right: 30px;
 }
 
-.nav_link:nth-child(8) {
+.nav_link:nth-child(5) {
     margin-right: 0;
+}
+
+.nav_link:nth-child(3) {
+    color: #87b672;
 }
 
 .nav_link:hover {
@@ -114,7 +118,7 @@ p {
 .form_search {
     position: relative;
     width: 200px;
-    margin: 30px 20px 0 0;
+    margin: 20px 20px 0 0;
     height: 42px;
 }
 
@@ -143,7 +147,7 @@ p {
 }
 
 .submit_head {
-    background: url('../img/magnify_glass.svg') no-repeat;
+    background: url('../img/mg.svg') no-repeat;
     border: none;
     height: 42px;
     width: 42px;
@@ -203,15 +207,15 @@ header h1 {
 }
 
 /*---------------about text----------------*/
-.services {
+.small_team {
     margin: 60px auto;
+    text-align: center;
     border-bottom: 1px solid;
-
 }
 
-.services_tittle {
+.tittle_and_text {
     max-width: 840px;
-    margin: 0 auto 60px auto;
+    margin: 60px auto;
 }
 
 h2.tittle {
@@ -229,6 +233,7 @@ p.text {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
 .about_texts {
@@ -248,9 +253,6 @@ p.text {
     margin-bottom: 60px;
 }
 
-.work_background .services {
-    border-bottom: none;
-}
 
 .work_background .container {
     padding: 60px 0;
@@ -283,10 +285,9 @@ p.text {
     border-bottom: 1px solid;
 }
 
-.purchase {
-    padding: 60px 0;
+.if_like {
+    margin: 60px auto;
     text-align: center;
-    border-top: 1px solid;
 }
 
 .btn {
@@ -297,7 +298,6 @@ p.text {
     text-transform: uppercase;
     text-decoration: none;
     padding: 12px 22px;
-    margin-top: 30px;
     background-color: #87b672;
     border-radius: 1px;
     border: none;
@@ -471,7 +471,7 @@ li a {
     border: none;
     display: none;
     position: absolute;
-    left: 0;
+    left: 20px;
     top:20px;
 }
 
@@ -504,94 +504,142 @@ li a {
     bottom: -8px;
 }
 /*--------------------media*/
-@media only screen and (max-width: 1250px){
+@media only screen and (max-width: 1270px){
     .header_inner {
-        margin: 0 10px;
-    }
-    .nav_form {
-        padding: 0 10px;
-        justify-content: center;
+        margin: 0 20px;
     }
 
-    .team_member {
-        margin-bottom: 20px;
+    .nav {
+        margin: 20px 20px 0 20px;
     }
-}
 
-@media only screen and (max-width: 1100px) {
     .deliver_footer,
     .contact,
     .quick_links,
     .newsletter {
-        padding: 0 10px;
+        margin: 0 20px;
     }
 
-    .footer {
-        flex-wrap: wrap;
-        justify-content: space-around;
+    .copyright,
+    .about {
+        margin: 0 10px;
+    }
+
+    p.text {
+        margin: 0 10px;
     }
 
     .team {
         justify-content: space-around;
     }
+    .team_member {
+        margin: 60px 10px;
+    }
+    .team_main .tittle_and_text {
+        margin-bottom: 0;
+    }
 }
-
-@media only screen and (max-width: 980px) {
-
-    .nav {
-        display: none;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        text-align: left;
-        margin: 10px 0;
-    }
-
-    .nav.show {
-        display: flex;
-    }
-
-    .slide_hid.hid {
-        margin-bottom: 300px;
-        visibility: hidden;
-    }
-
-    .nav_link {
-        padding: 10px 0;
-    }
-
+@media only screen and (max-width: 810px) {
     .nav_form {
-        justify-content: flex-end;
-        margin: 0 20px;
+        justify-content: center;
     }
 
-    .form_search {
-        margin: 15px 0;
-    }
-
-    .burger {
-        display: block;
-    }
-    .work {
-        justify-content: space-around;
-    }
-
-
-}
-
-@media only screen and (max-width: 720px) {
-    header h1 {
-        font-size: 1.5em;
+    .footer {
+        flex-direction: column;
         padding: 10px 0;
     }
 
+    h3 {
+        margin-bottom: 5px;
+    }
+
+    ul {
+        margin-top: 0;
+    }
+
+    .bottom {
+        padding: 10px 0;
+    }
+
+    .deliver_footer {
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .if_like {
+        margin: 20px auto;
+    }
+
+    .work_background .container {
+        padding: 20px 0;
+    }
+
+    .work_background {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (max-width: 645px) {
     .about_main {
-        justify-content: space-around;
+        flex-direction: column;
     }
 
     .about_texts {
         max-width: 100%;
     }
+
+    .small_team {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .small_team {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .tittle_and_text {
+        margin: 30px auto;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+        left: 20px;
+        top: 70px;
+    }
+
+    .nav.show {
+        display: flex;
+        width: 92%;
+        border-bottom: 1px solid;
+    }
+
+    .nav_link {
+        margin-bottom: 20px;
+    }
+
+    .burger {
+        display: block;
+    }
+    .nav_form {
+        justify-content: flex-end;
+    }
+
+    .slide_hid.hid {
+        margin-bottom: 150px;
+        visibility: hidden;
+    }
+
+    .btn {
+        margin-top: 0;
+    }
+
 }
