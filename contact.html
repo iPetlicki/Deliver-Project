@@ -3,18 +3,17 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Contact Us</title>
+    <title>Contact Us | Deliver</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/contact.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-<!--    header-->
 <header class="header">
     <div class="container">
         <div class="header_inner">
-            <div class="header_logo"><a class="logo" href="home.html">Deliver</a></div>
+            <div class="header_logo"><a class="logo" href="index.html">Deliver</a></div>
             <div class="header_social">
                 <a class="social_item" href="https://www.twitter.com" target="_blank" title="We are on twitter!">
                     <img src="img/social/twitter-white.svg"  alt="tw">
@@ -27,10 +26,9 @@
                 </a>
             </div>
         </div>
-
         <div class="nav_form">
             <nav class="nav" id="nav">
-                <a class="nav_link" href="home.html">Home</a>
+                <a class="nav_link" href="index.html">Home</a>
                 <a class="nav_link" href="portfolio.html">Portfolio</a>
                 <a class="nav_link" href="about.html">About</a>
                 <a class="nav_link" href="services.html">Services</a>
@@ -47,53 +45,45 @@
     </div>
     <h1  id="slide" class="slide_hid">contact us</h1>
 </header>
-<!--    check services-->
-<div class="container container_text">
-    <div id="side2" class="container_text_tittle slide_hid">
+<div class="container tittle_and_text">
+    <div id="side2" class=" slide_hid">
         <h2 class="tittle">We would like to hear from you!</h2>
         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.</p>
     </div>
 </div>
-<!--form and location-->
 <div class="container form_location">
     <form class="contact_form" method="get" action="https://fe.it-academy.by/TestForm.php">
         <h3>contact form</h3>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.</p>
         <label for="name">
             <h4>
                 name  <sup>&ast;</sup>
             </h4>
             <p>Your full name please.</p>
         </label>
-        <input type="text" id="name" name="name">
-
+        <input type="text" id="name" name="name" required>
         <label for="email">
             <h4>
                 Email Address  <sup>&ast;</sup>
             </h4>
             <p>This will be the email I contact you with.</p>
         </label>
-        <input type="text" name="email" id="email">
-
+        <input type="email" name="email" id="email" required>
         <label for="subject">
             <h4>
                 Subject  <sup>&ast;</sup>
             </h4>
             <p>Be creative if you like.</p>
         </label>
-        <input type="text" id="subject" name="subject">
-
+        <input type="text" id="subject" name="subject" required>
         <label for="message">
             <h4>
                 Message  <sup>&ast;</sup>
             </h4>
             <p>Please don’t send me too long of a message ... jks!</p>
         </label>
-        <textarea  rows="20" id="message" name="message"></textarea>
-
+        <textarea  rows="20" id="message" name="message" required></textarea>
         <input class="send_form" type="submit" value="Send Message">
-
-
     </form>
     <div class="location">
         <h3>Our Location</h3>
@@ -106,7 +96,6 @@
             S7R 1A3
         </p>
         <table>
-            <col style="font-weight: bold"><col>
             <caption><h3>Contact Information</h3></caption>
             <tr>
                 <td class="table_tittles">Email:</td>
@@ -137,26 +126,20 @@
             </tr>
         </table>
         <p><sup>&ast;</sup>Feel free to email or call us after hours.</p>
-
-    </div>
     </div>
 </div>
-
-<!--need theme?-->
 <div class="container purchase">
-    <div class="container_text_tittle">
-    <h2 class="tittle">Do you need a Theme?</h2>
-    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.</p>
+    <div class="tittle_and_text">
+        <h2 class="tittle">Do you need a Theme?</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.</p>
+    </div>
     <button class="btn" onclick="window.location.href = 'https://google.com';">Purchase</button>
 </div>
-</div>
-
-<!--footer-->
 <footer>
     <div class="container footer">
         <div class="deliver_footer">
             <div class="social_logo">
-                <div class="header_logo"><a class="logo_footer" href="home.html">Deliver</a></div>
+                <div class="header_logo"><a class="logo_footer" href="index.html">Deliver</a></div>
                 <div class="header_social">
                     <a class="social_item_footer" href="https://www.twitter.com" target="_blank" title="We are on twitter!">
                         <img src="img/social/twitter-black.svg"  alt="tw">
@@ -169,7 +152,7 @@
                     </a>
                 </div>
             </div>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida quam quis nunc rutrum placerat. Proin eu mi vitae neque veh interdum id nec turpis nam auctor faucibus sollicitudin.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida quam quis nunc rutrum placerat. Proin eu mi vitae neque veh interdum id nec turpis nam auctor faucibus sollicitudin.</p>
 
         </div>
         <div class="contact">
@@ -204,11 +187,6 @@
         <div class="about"><a href="#">About</a>  /  <a href="#">Privacy Policy</a>  /  <a href="#">Contact</a></div>
     </div>
 </footer>
-
-<script src="JS/about.js"></script>
-
-
-</div>
-
+<script src="JS/contact.js"></script>
 </body>
 </html>
