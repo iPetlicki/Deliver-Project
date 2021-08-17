@@ -451,6 +451,10 @@ li a {
     color: inherit;
 }
 
+li a:hover {
+    text-decoration: underline;
+}
+
 .footer h3 {
     text-align: left;
 }
@@ -580,6 +584,10 @@ li a {
 
     p.text {
         margin: 0 10px;
+    }
+
+    .service_block_text p {
+        margin-left: 0;
     }
 
     .offer {

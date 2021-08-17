@@ -429,6 +429,10 @@ li a {
     color: inherit;
 }
 
+li a:hover {
+    text-decoration: underline;
+}
+
 .footer h3 {
     text-align: left;
 }

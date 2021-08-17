@@ -290,6 +290,18 @@ textarea {
     line-height: 1.5;
 }
 
+.location address {
+    font-style: normal;
+}
+
+.location a {
+    text-decoration: none;
+    font-style: inherit;
+    color: #9b9999;
+}
+
+
+
 .location h3
  {
     text-align: left;
@@ -408,6 +420,10 @@ ul {
 li a {
     text-decoration: none;
     color: inherit;
+}
+
+li a:hover {
+    text-decoration: underline;
 }
 
 .footer h3 {

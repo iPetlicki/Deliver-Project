@@ -546,6 +546,10 @@ li a {
     color: inherit;
 }
 
+li a:hover {
+    text-decoration: underline;
+}
+
 .footer h3 {
     text-align: left;
 }
@@ -679,6 +683,10 @@ li a {
 
     .service_block {
         margin: 0 20px;
+    }
+
+    .service p.text {
+        margin: 0 10px 10px 10px;
     }
 
     .deliver_footer,
