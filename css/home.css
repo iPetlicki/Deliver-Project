@@ -927,6 +927,12 @@ li a:hover {
         padding: 10px 0;
     }
 
+    .text_slider {
+        bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
 }
 
 
