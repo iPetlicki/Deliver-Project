@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Home | Deliver</title>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/home.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+<body>
+<header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo"><a class="logo" href="index.html">Deliver</a>
+                </div>
+                <div class="header_social">
+                    <a class="social_item" href="https://www.twitter.com" target="_blank" title="We are on twitter!">
+                        <img src="img/social/twitter-black.svg"  alt="tw">
+                    </a>
+                    <a class="social_item" href="https://www.facebook.com/" target="_blank" title="We are on facebook!">
+                        <img src="img/social/facebook-black.svg"  alt="fb">
+                    </a>
+                    <a class="social_item" href="https://rss.com/" target="_blank" title="We are on RRS!">
+                        <img src="img/social/rss-black.svg"  alt="rss">
+                    </a>
+                </div>
+            </div>
+            <div class="nav_form">
+                <nav class="nav" id="nav">
+                    <a class="nav_link" href="index.html">Home</a>
+                    <a class="nav_link" href="portfolio.html">Portfolio</a>
+                    <a class="nav_link" href="about.html">about</a>
+                    <a class="nav_link" href="services.html">Services</a>
+                    <a class="nav_link" href="contact.html">Contact us</a>
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger_item">M</span>
+                </button>
+                    <form class="form_search" method="get" action=" https://fe.it-academy.by/TestForm.php">
+                        <input class="search" type="text" placeholder="Search here...">
+                        <button class="submit_head" type="submit"></button>
+                    </form>
+            </div>
+            <div id="slide" class="slide_hid">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="text_slider"><h1>We <span class="green_h1">Deliver</span> nothing Short of Awesome!</h1>
+                        <div class="slide">Check out our portfolio to see our great work.</div>
+                        <button onclick="window.location.href = 'portfolio.html';" class="slider_btn">portfolio</button>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="text_slider"><h1>Check Out Our Awesome <span class="green_h1">Services</span></h1>
+                        <div class="slide">Check Out Our Services and offers</div>
+                        <button onclick="window.location.href = 'services.html';" class="slider_btn">services</button>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="text_slider"><h1>We are a Small Team <span class="green_h1">Doing</span> Big Things!</h1>
+                        <div class="slide">If you like what you see, Join Us!</div>
+                        <button onclick="window.location.href = 'about.html';" class="slider_btn">about us</button>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            </div>
+        </div>
+
+    </header>
+<div class="container services">
+        <div class="tittle_and_text">
+            <h2 class="tittle">We are a Small Team Doing Big Things!</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.</p>
+        </div>
+        <div class="service_block">
+            <div class="service">
+                    <img src="img/services/service-1.jpg" alt="service 1">
+                    <h3>service 1</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit. Praesent lato justo ligula, interdu ut lobortis quis dolor amet.</p>
+                    <a class="FOM" href="services.html">Find out more</a>
+            </div>
+            <div class="service">
+                    <img src="img/services/service-2.jpg" alt="service 2">
+                    <h3>service 2</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit. Praesent lato justo ligula, interdu ut lobortis quis dolor amet.</p>
+                    <a class="FOM" href="services.html">Find out more</a>
+            </div>
+            <div class="service">
+                    <img src="img/services/service-3.jpg" alt="service 3">
+                    <h3>service 3</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit. Praesent lato justo ligula, interdu ut lobortis quis dolor amet.</p>
+                    <a class="FOM" href="services.html">Find out more</a>
+            </div>
+        </div>
+    </div>
+<div class="work_background">
+        <div class="container ">
+            <div class="tittle_and_text">
+                <h2 class="tittle">Some of Our Latest Work</h2>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.</p>
+            </div>
+            <div class="work">
+                <div class="work_items">
+                    <img  src="img/works/cases.gif" alt="" >
+                    <img class="portfolio_works" id="circle_icons" src="img/works/screen_icons.jpg" alt="">
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01" src="img/works/screen_icons_big.jpg" alt="">
+                    </div>
+                    <h3>Circle Icons</h3>
+                </div>
+                <div class="work_items">
+                    <img  src="img/works/cases.gif" alt="" >
+                    <img class="portfolio_works" id="arrows" src="img/works/arrows.jpg" alt="">
+                    <div id="myModal2" class="modal">
+                        <span class="close2">&times;</span>
+                        <img class="modal-content" id="img02" src="img/works/arrows_big.jpg" alt="">
+                    </div>
+                    <h3>Arrows</h3>
+                </div>
+                <div class="work_items">
+                    <img  src="img/works/cases.gif" alt="" >
+                    <img class="portfolio_works" id="portfolio_theme" src="img/works/portfolio_small.jpg" alt="">
+                    <div id="myModal3" class="modal">
+                        <span class="close3">&times;</span>
+                        <img class="modal-content" id="img03" src="img/works/portfolio_big.jpg" alt="">
+                    </div>
+                    <h3>Portfolio Theme</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container purchase">
+        <div class="tittle_and_text">
+            <h2 class="tittle">Do you Like What You See?</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.
+            </p>
+        </div>
+        <button class="btn" onclick="window.location.href = 'error.html';">Purchase</button>
+    </div>
+<footer>
+        <div class="container footer">
+            <div class="deliver_footer">
+                <div class="social_logo">
+                    <div class="header_logo"><a class="logo" href="index.html">Deliver</a></div>
+                    <div class="header_social">
+                    <a class="social_item" href="https://www.twitter.com" target="_blank" title="We are on twitter!">
+                        <img src="img/social/twitter-black.svg"  alt="tw">
+                    </a>
+                    <a class="social_item" href="https://www.facebook.com/" target="_blank" title="We are on facebook!">
+                        <img src="img/social/facebook-black.svg"  alt="fb">
+                    </a>
+                    <a class="social_item" href="https://rss.com/" target="_blank" title="We are on RRS!">
+                        <img src="img/social/rss-black.svg"  alt="rss">
+                    </a>
+                </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida quam quis nunc rutrum placerat. Proin eu mi vitae neque veh interdum id nec turpis nam auctor faucibus sollicitudin.</p>
+            </div>
+            <div class="contact">
+                <h3>contact info</h3>
+                <address class="address">
+                    222 Ave C South<br>
+                    Saskatoon, Saskatchewan<br>
+                    Canada S7K 2N5
+                </address>
+                <a class="contact_mail" href="mailto:info@deliver.ca">info@deliver.ca</a>
+                <a class="phone" href="tel:1.306.222.3456">1-250-360-0311</a>
+            </div>
+            <div class="quick_links">
+                <h3>quick links</h3>
+                <ul>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="newsletter"><h3>newsletter</h3>
+                <p>Lorem ipsum dolor sit amet dolor consectetur adipiscing elit.</p>
+                <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                    <input class="email" type="email" name="email" value="   Email">
+                    <input class="mail_submit" type="submit" value="OK">
+                </form>
+            </div>
+        </div>
+        <div class="container bottom">
+            <div class="copyright">Copyright 2021 <span>Deliver</span>. All Rights Reserved.</div>
+            <div class="about"><a href="#">About</a>  /  <a href="#">Privacy Policy</a>  /  <a href="#">Contact</a></div>
+        </div>
+    </footer>
+<script src="JS/home.js"></script>
+</body>
+</html>
